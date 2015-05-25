@@ -43,25 +43,4 @@ class RowBlastVC: UIViewController {
     }
         
     
-    
-  
-    @IBAction func prlevel2(sender: AnyObject) {
-        if (sd.readTotalTokens() - 6 >= 0) {
-            sd.setTotalTokens(sd.readTotalTokens() - 6)
-            sd.setrbLevel2(sd.readRB("2") + 1)
-            lv2label.text = String(sd.readRB("2"))
-            totalTokens.text = String(sd.readTotalTokens())
-        }
-    }
-    
-    
-  
-    @IBAction func prlevel3(sender: AnyObject) {
-        if (sd.readTotalTokens() - 10 >= 0) {
-        sd.setTotalTokens(sd.readTotalTokens() - 10)
-        sd.setrblevel3(sd.readRB("3") + 1)
-        lv3label.text = String(sd.readRB("3"))
-        totalTokens.text = String(sd.readTotalTokens())
-        }
-    }
-}
+  }
