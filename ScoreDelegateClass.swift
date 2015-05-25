@@ -125,6 +125,6 @@ public class ScoreDelegate {
             
         }
         
-     return 1010
+     return 1e+6
     }
 }
