@@ -149,6 +149,8 @@ class GameViewController: UIViewController, tetrisDelegate, UIGestureRecognizerD
         scene.stopTicking()
         scene.playSound("gameover.mp3")
         scene.animatateCollapsingLines(tetris.removeAllBlocks(), fallenBlocks: Array<Array<Block>>()) {
+            var sd = ScoreDelegate()
+            
             tetris.beginGame() //MARK
         }
         

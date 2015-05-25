@@ -118,6 +118,10 @@ class Tetris {
         isGameRunning = false
         delegate?.gameDidEnd(self)
         var sd = ScoreDelegate()
+        if (sd.readCurrScore() > sd.readHighScore()) {
+            //High Score!
+            sd.setHighScore(sd.readCurrScore())
+        }
         sd.setTotalPoints()
         
     }

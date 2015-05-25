@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA721B711B13B382008C921C /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA721B701B13B382008C921C /* MainMenuVC.swift */; };
 		FA7AC0411B07A5CE00478235 /* RowBlastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AC0401B07A5CE00478235 /* RowBlastVC.swift */; };
 		FAB987A71AD865AE00D4484F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB987A61AD865AE00D4484F /* AppDelegate.swift */; };
 		FAB987AB1AD865AE00D4484F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB987AA1AD865AE00D4484F /* GameScene.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA721B701B13B382008C921C /* MainMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
 		FA7AC0401B07A5CE00478235 /* RowBlastVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowBlastVC.swift; sourceTree = "<group>"; };
 		FAB987A11AD865AE00D4484F /* Tetris - Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tetris - Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB987A51AD865AE00D4484F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				FAB987F31AD9451A00D4484F /* SShape.swift */,
 				FAB987F51AD9454A00D4484F /* ZShape.swift */,
 				FAB987AE1AD865AE00D4484F /* Main.storyboard */,
+				FA721B701B13B382008C921C /* MainMenuVC.swift */,
 				FACB83D91B08EB0B00EDD817 /* TradePointsVC.swift */,
 				FA7AC0401B07A5CE00478235 /* RowBlastVC.swift */,
 				FACB83D71B081C6E00EDD817 /* ScoreDelegateClass.swift */,
@@ -325,6 +328,7 @@
 				FAB987E81AD8B6DB00D4484F /* Shape.swift in Sources */,
 				FAB987E41AD8B05000D4484F /* Array2D.swift in Sources */,
 				FAB987EE1AD943CB00D4484F /* LineShape.swift in Sources */,
+				FA721B711B13B382008C921C /* MainMenuVC.swift in Sources */,
 				FAB987F41AD9451A00D4484F /* SShape.swift in Sources */,
 				FACB83DA1B08EB0B00EDD817 /* TradePointsVC.swift in Sources */,
 				FAB987EC1AD9423A00D4484F /* TShape.swift in Sources */,

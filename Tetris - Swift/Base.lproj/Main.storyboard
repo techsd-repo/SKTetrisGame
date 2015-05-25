@@ -380,10 +380,19 @@
                                     <segue destination="LVB-YS-i5n" kind="show" id="zJR-s7-4P8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TB9-au-JGd">
+                                <rect key="frame" x="83" y="28" width="140" height="23"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="hscore" destination="TB9-au-JGd" id="Vwi-2s-1gN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7sa-L1-tNv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -394,7 +403,7 @@
         <image name="tetrismain.png" width="600" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8nN-Kz-xgA"/>
         <segue reference="fiR-N0-TGW"/>
+        <segue reference="vz1-gD-H30"/>
     </inferredMetricsTieBreakers>
 </document>
