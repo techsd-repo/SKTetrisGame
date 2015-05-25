@@ -34,24 +34,32 @@ class RowBlastVC: UIViewController {
     
     
     @IBAction func prlevel1(sender: AnyObject) {
+        if (sd.readTotalTokens() - 3 >= 0) {
         sd.setTotalTokens(sd.readTotalTokens() - 3)
         sd.setrbLevel1(sd.readRB("1") + 1)
         lv1label.text = String(sd.readRB("1"))
+        }
     }
+        
     
     
   
     @IBAction func prlevel2(sender: AnyObject) {
-        sd.setTotalTokens(sd.readTotalTokens() - 6)
-        sd.setrbLevel2(sd.readRB("2") + 1)
-        lv2label.text = String(sd.readRB("2"))
+        if (sd.readTotalTokens() - 6 >= 0) {
+            sd.setTotalTokens(sd.readTotalTokens() - 6)
+            sd.setrbLevel2(sd.readRB("2") + 1)
+            lv2label.text = String(sd.readRB("2"))
+
+        }
     }
     
     
   
     @IBAction func prlevel3(sender: AnyObject) {
+        if (sd.readTotalTokens() - 10 >= 0) {
         sd.setTotalTokens(sd.readTotalTokens() - 10)
         sd.setrblevel3(sd.readRB("3") + 1)
         lv3label.text = String(sd.readRB("3"))
+        }
     }
 }
