@@ -90,6 +90,10 @@ public class ScoreDelegate {
     }
     
     
+    func readTotalTokens() -> Int {
+        return CurrScoreDefault.integerForKey("TotalTokens")
+    }
+    
     //RowBlastDefaults
     
     let rbDefaults = NSUserDefaults.standardUserDefaults()
