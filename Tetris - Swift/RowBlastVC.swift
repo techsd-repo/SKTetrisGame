@@ -38,6 +38,7 @@ class RowBlastVC: UIViewController {
         sd.setTotalTokens(sd.readTotalTokens() - 3)
         sd.setrbLevel1(sd.readRB("1") + 1)
         lv1label.text = String(sd.readRB("1"))
+        totalTokens.text = String(sd.readTotalTokens())
         }
     }
         
@@ -49,7 +50,7 @@ class RowBlastVC: UIViewController {
             sd.setTotalTokens(sd.readTotalTokens() - 6)
             sd.setrbLevel2(sd.readRB("2") + 1)
             lv2label.text = String(sd.readRB("2"))
-
+            totalTokens.text = String(sd.readTotalTokens())
         }
     }
     
@@ -60,6 +61,7 @@ class RowBlastVC: UIViewController {
         sd.setTotalTokens(sd.readTotalTokens() - 10)
         sd.setrblevel3(sd.readRB("3") + 1)
         lv3label.text = String(sd.readRB("3"))
+        totalTokens.text = String(sd.readTotalTokens())
         }
     }
 }

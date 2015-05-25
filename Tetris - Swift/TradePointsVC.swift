@@ -30,6 +30,8 @@ class TradePointsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       // sd.setPoints(100)
+        
         stepper.autorepeat = true
         totalPoints.text = "Total Points: \(sd.readTotalPoints())"
         stepper.maximumValue = Double(sd.readTotalPoints() / 4)
@@ -55,7 +57,7 @@ class TradePointsVC: UIViewController {
 
     
     @IBAction func purchase(sender: UIButton) {
-        sd.setTotalTokens(svalue)
+        sd.setTotalTokens(pD / 4)
         sd.setPoints(sd.readTotalPoints() - pD)
         performSegueWithIdentifier("shopsg", sender: nil)
     }
