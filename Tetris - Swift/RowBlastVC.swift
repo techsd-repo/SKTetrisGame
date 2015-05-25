@@ -14,12 +14,14 @@ class RowBlastVC: UIViewController {
     @IBOutlet weak var lv2label: UILabel!
     @IBOutlet weak var lv3label: UILabel!
     @IBOutlet weak var totalTokens: UILabel!
-  
+    
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
         
         // Do any additional setup after loading the view.
     }
