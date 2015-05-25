@@ -98,4 +98,15 @@ public class ScoreDelegate {
     
     let rbDefaults = NSUserDefaults.standardUserDefaults()
     
+    func setrbLevel1(t1: Int) {
+        rbDefaults.setInteger(t1, forKey: "level1")
+    }
+    
+    func setrbLevel2(t2: Int) {
+        rbDefaults.setInteger(t2, forKey: "level2")
+    }
+    
+    func setrblevel3(t3: Int) {
+        rbDefaults.setInteger(t3, forKey: "level3")
+    }
 }
