@@ -8,7 +8,7 @@
 
 
 class SShape:Shape {
-    
+   
     override var blockRowColumnPositions: [Orientation: Array<(columnDiff: Int, rowDiff: Int)>] {
         return [
             Orientation.Zero:       [(0, 0), (0, 1), (1, 1), (1, 2)],
