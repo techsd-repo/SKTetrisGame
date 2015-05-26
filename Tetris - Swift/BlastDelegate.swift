@@ -7,4 +7,16 @@
 //
 
 import Foundation
+import UIKit
 
+class BlastDelegate : UIViewController {
+    var sd = ScoreDelegate()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    func checkForNilRowBlast() -> Bool {
+        sd.readRB("1")
+    }
+    
+}

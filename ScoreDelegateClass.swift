@@ -102,29 +102,9 @@ public class ScoreDelegate {
         rbDefaults.setInteger(t1, forKey: "level1")
     }
     
-    func setrbLevel2(t2: Int) {
-        rbDefaults.setInteger(t2, forKey: "level2")
-    }
-    
-    func setrblevel3(t3: Int) {
-        rbDefaults.setInteger(t3, forKey: "level3")
-    }
-    
     func readRB(type: String) -> Int {
-        if (type == "1") {
-            
-            return rbDefaults.integerForKey("level1")
-            
-        } else if(type == "2") {
-            
-            return rbDefaults.integerForKey("level2")
-            
-        } else if(type == "3") {
-            
-            return rbDefaults.integerForKey("level3")
-            
-        }
+       
+        return rbDefaults.integerForKey("level1")
         
-     return 9999999999
     }
 }
