@@ -38,7 +38,7 @@ class Tetris {
     
     var score:Int
     var level:Int
-   
+    var scene:GameScene
     var isGameRunning: Bool = false
     
     init() {
@@ -193,6 +193,7 @@ class Tetris {
         return allBlocks
     }
     
+       
     func dropShape() {
         if let shape = fallingShape {
             while detectIllegalPlacement() == false {

@@ -11,6 +11,8 @@ import UIKit
 
 class BlastDelegate : UIViewController {
     var sd = ScoreDelegate()
+    var tetris = Tetris()
+    var scene:GameScene?
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,6 +23,15 @@ class BlastDelegate : UIViewController {
         } else {
             return false
         }
+    }
+    
+    
+    func runRowBlastAnimation() {
+        //Run animation here
+        scene!.animatateCollapsingLines(tetris.removeAllBlocks(), fallenBlocks: Array<Array<Block>>()) {
+            return true
+        }
+        
     }
     
 }

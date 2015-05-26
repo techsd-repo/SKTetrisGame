@@ -151,7 +151,7 @@ class GameViewController: UIViewController, tetrisDelegate, UIGestureRecognizerD
         scene.animatateCollapsingLines(tetris.removeAllBlocks(), fallenBlocks: Array<Array<Block>>()) {
             var sd = ScoreDelegate()
             
-            tetris.beginGame() //MARK
+            tetris.beginGame() //MARK // segue
         }
         
         // Stop the timer and set it to nil here
