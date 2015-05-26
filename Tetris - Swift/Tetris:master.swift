@@ -38,7 +38,7 @@ class Tetris {
     
     var score:Int
     var level:Int
-    var scene:GameScene
+    var scene = GameScene.self
     var isGameRunning: Bool = false
     
     init() {

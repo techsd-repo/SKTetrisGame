@@ -61,6 +61,12 @@ class GameViewController: UIViewController, tetrisDelegate, UIGestureRecognizerD
     }
    
     
+    
+    @IBAction func rbEvent(sender: AnyObject) {
+        //Add event
+    }
+    
+    
     @IBAction func didTap(sender: UITapGestureRecognizer) {
         tetris.rotateShape()
                    

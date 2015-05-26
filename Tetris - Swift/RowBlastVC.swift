@@ -36,8 +36,8 @@ class RowBlastVC: UIViewController {
     @IBAction func prlevel1(sender: AnyObject) {
         if (sd.readTotalTokens() - 3 >= 0) {
         sd.setTotalTokens(sd.readTotalTokens() - 3)
-        sd.setrbLevel1(sd.readRB("1") + 1)
-        lv1label.text = String(sd.readRB("1"))
+        sd.setrbLevel1(sd.readRB() + 1)
+        lv1label.text = String(sd.readRB())
         totalTokens.text = String(sd.readTotalTokens())
         }
     }
