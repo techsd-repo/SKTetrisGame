@@ -102,7 +102,7 @@ public class ScoreDelegate {
         rbDefaults.setInteger(t1, forKey: "level1")
     }
     
-    func readRB(type: String) -> Int {
+    func readRB() -> Int {
        
         return rbDefaults.integerForKey("level1")
         

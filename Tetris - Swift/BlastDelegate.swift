@@ -16,7 +16,11 @@ class BlastDelegate : UIViewController {
     }
     
     func checkForNilRowBlast() -> Bool {
-        sd.readRB("1")
+        if sd.readRB() > 0 {
+            return true
+        } else {
+            return false
+        }
     }
     
 }
