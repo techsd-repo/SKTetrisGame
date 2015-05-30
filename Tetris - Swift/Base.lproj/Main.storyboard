@@ -37,12 +37,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tokens Left:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EI8-9z-SL2">
-                                <rect key="frame" x="186" y="334" width="144" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lv. 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVm-9D-elx">
                                 <rect key="frame" x="0.0" y="353" width="36" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -107,6 +101,12 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tokens Left:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EI8-9z-SL2">
+                                <rect key="frame" x="189" y="334" width="144" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -323,10 +323,10 @@
             </objects>
             <point key="canvasLocation" x="592.5" y="418.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Game OverVC-->
         <scene sceneID="1jx-O1-hxE">
             <objects>
-                <viewController id="2vh-IM-eXq" sceneMemberID="viewController">
+                <viewController id="2vh-IM-eXq" customClass="GameOverVC" customModule="Tetris___Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DHw-z9-mQw"/>
                         <viewControllerLayoutGuide type="bottom" id="clw-pb-5oO"/>
@@ -435,6 +435,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fiR-N0-TGW"/>
-        <segue reference="vz1-gD-H30"/>
+        <segue reference="8nN-Kz-xgA"/>
     </inferredMetricsTieBreakers>
 </document>
