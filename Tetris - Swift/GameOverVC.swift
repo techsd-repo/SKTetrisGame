@@ -15,7 +15,7 @@ class GameOverVC: UIViewController {
         
         if sd.readNewHSBool() != true {
             labHS.enabled = false
-            labhsNum.enabled = falseç
+            labhsNum.enabled = false
         }
         
     }
