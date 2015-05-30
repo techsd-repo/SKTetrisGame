@@ -12,5 +12,17 @@ import UIKit
 class GameOverVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if sd.readNewHSBool() != true {
+            labHS.enabled = false
+            labhsNum.enabled = falseç
+        }
+        
     }
+    @IBOutlet weak var labHS: UILabel!
+    @IBOutlet weak var labhsNum: UILabel!
+    
+    
+    var sd = ScoreDelegate()
+    
 }

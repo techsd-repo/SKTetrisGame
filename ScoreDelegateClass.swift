@@ -107,4 +107,13 @@ public class ScoreDelegate {
         return rbDefaults.integerForKey("level1")
         
     }
+    
+    func setNewHSBool(bl: Bool) {
+        HighScoreDefault.setBool(bl, forKey: "newhs")
+    }
+    
+    
+    func readNewHSBool() -> Bool {
+        return HighScoreDefault.boolForKey("newhs")
+    }
 }

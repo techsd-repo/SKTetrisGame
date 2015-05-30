@@ -120,6 +120,7 @@ class Tetris {
         var sd = ScoreDelegate()
         if (sd.readCurrScore() > sd.readHighScore()) {
             //High Score!
+            sd.setNewHSBool(true)
             sd.setHighScore(sd.readCurrScore())
         }
         sd.setTotalPoints()
