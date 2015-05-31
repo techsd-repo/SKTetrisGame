@@ -11,12 +11,13 @@ import UIKit
 
 class mmvc:UIViewController {
     @IBOutlet weak var hscore: UILabel!
+     var sd = ScoreDelegate()
     override func viewDidLoad() {
         super.viewDidLoad()
         hscore.text = String(sd.readHighScore())
     }
     
-    var sd = ScoreDelegate()
+   
     
     
 }

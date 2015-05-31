@@ -167,6 +167,8 @@ class GameViewController: UIViewController, tetrisDelegate, UIGestureRecognizerD
     func gameDidLevelUp(tetris: Tetris) {
         levelLabel.text = "\(tetris.level)"
         scoreLabel.text = "\(tetris.score)"
+        var sd = ScoreDelegate()
+        sd.setCurrScore(tetris.score)
         if scene.tickLengthMillis >= 100 {
             scene.tickLengthMillis -= 100
         } else if scene.tickLengthMillis > 50 {

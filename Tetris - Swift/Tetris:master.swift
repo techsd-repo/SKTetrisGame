@@ -113,18 +113,18 @@ class Tetris {
     }
     
     func endGame() {
-        score = 0
-        level = 1
+        
         isGameRunning = false
         delegate?.gameDidEnd(self)
         var sd = ScoreDelegate()
-        if (sd.readCurrScore() > sd.readHighScore()) {
+        if (score > sd.readHighScore()) {
             //High Score!
             sd.setNewHSBool(true)
-            sd.setHighScore(sd.readCurrScore())
+            sd.setHighScore(score)
         }
         sd.setTotalPoints()
-        
+        score = 0
+        level = 1
     }
     
     func removeCompletedLines() -> (linesRemoved: Array<Array<Block>>, fallenBlocks: Array<Array<Block>>) {
