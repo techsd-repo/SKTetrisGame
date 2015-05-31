@@ -100,6 +100,8 @@ class Tetris {
         }
     }
     
+    
+    
     func detectTouch() -> Bool {
         if let shape = fallingShape {
             for bottomBlock in shape.bottomBlocks {
@@ -110,6 +112,8 @@ class Tetris {
             }
         }
         return false
+        
+        
     }
     
     func endGame() {

@@ -64,6 +64,10 @@ class GameViewController: UIViewController, tetrisDelegate, UIGestureRecognizerD
     
     @IBAction func rbEvent(sender: AnyObject) {
         //Add event
+        var bd = BlastDelegate()
+        scene.animatateCollapsingLines(tetris.removeAllBlocks(), fallenBlocks: Array<Array<Block>>()) {
+            //Play sound
+        }
     }
     
     
@@ -81,7 +85,7 @@ class GameViewController: UIViewController, tetrisDelegate, UIGestureRecognizerD
                 if sender.velocityInView(self.view).x > CGFloat(0) {
                     tetris.moveShapeRight()
                     panPointReference = currentPoint
-                } else {
+                } else { 
                     tetris.moveShapeLeft()
                     panPointReference = currentPoint
                 }
