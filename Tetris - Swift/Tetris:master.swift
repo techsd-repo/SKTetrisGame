@@ -191,11 +191,14 @@ class Tetris {
                 if let block = blockArray[column, row] {
                     rowOfBlocks.append(block)
                     blockArray[column, row] = nil
+                    
                 }
             }
             allBlocks.append(rowOfBlocks)
         }
         return allBlocks
+        
+        
     }
     
        

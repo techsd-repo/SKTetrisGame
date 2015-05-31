@@ -26,6 +26,7 @@ class GameViewController: UIViewController, tetrisDelegate, UIGestureRecognizerD
 
     
     
+    @IBOutlet weak var rbLabelScore: UILabel!
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var levelLabel: UILabel!
        
@@ -34,7 +35,7 @@ class GameViewController: UIViewController, tetrisDelegate, UIGestureRecognizerD
     var td:tetrisDelegate!
     var panPointReference:CGPoint?
   
-
+    var sd = ScoreDelegate()
     
     
     
@@ -55,7 +56,7 @@ class GameViewController: UIViewController, tetrisDelegate, UIGestureRecognizerD
         skView.presentScene(scene)
         
         
-        
+        rbLabelScore.text = String(sd.readRB())
         
 
     }
@@ -65,9 +66,12 @@ class GameViewController: UIViewController, tetrisDelegate, UIGestureRecognizerD
     @IBAction func rbEvent(sender: AnyObject) {
         //Add event
         var bd = BlastDelegate()
-        scene.animatateCollapsingLines(tetris.removeAllBlocks(), fallenBlocks: Array<Array<Block>>()) {
-            //Play sound
+        scene!.animatateCollapsingLines(tetris.removeAllBlocks(), fallenBlocks: Array<Array<Block>>()) {
+            self.sd.setrbLevel1(self.sd.readRB() - 1)
+            
+            
         }
+        rbLabelScore.text = String(sd.readRB())
     }
     
     

@@ -22,7 +22,7 @@ class RowBlastVC: UIViewController {
         super.viewDidLoad()
         
        totalTokens.text = String(sd.readTotalTokens())
-        
+        lv1label.text = String(sd.readRB())
         // Do any additional setup after loading the view.
     }
     

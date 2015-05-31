@@ -296,6 +296,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="levelLabel" destination="UXJ-o4-HPo" id="cBc-Ov-qrC"/>
+                        <outlet property="rbLabelScore" destination="pJg-G8-jSl" id="9Mg-OS-1tN"/>
                         <outlet property="scoreLabel" destination="rli-ZG-1wA" id="Mcr-nc-Rl8"/>
                         <outlet property="timeLabel" destination="m8M-sG-Fah" id="x28-Gr-3Vi"/>
                         <outlet property="timeScore" destination="X5s-2N-lAV" id="0gP-Hc-Kfj"/>
@@ -438,7 +439,7 @@
         <image name="whitebg.png" width="84" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="vz1-gD-H30"/>
         <segue reference="fiR-N0-TGW"/>
-        <segue reference="8nN-Kz-xgA"/>
     </inferredMetricsTieBreakers>
 </document>

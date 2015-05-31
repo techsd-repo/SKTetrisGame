@@ -26,12 +26,6 @@ class BlastDelegate : UIViewController {
     }
     
     
-    func runRowBlastAnimation() {
-        //Run animation here
-        scene!.animatateCollapsingLines(tetris.removeAllBlocks(), fallenBlocks: Array<Array<Block>>()) {
-            return true
-        }
-        
-    }
+   
     
 }
