@@ -11,8 +11,7 @@ import UIKit
 class RowBlastVC: UIViewController {
     
     @IBOutlet weak var lv1label: UILabel!
-    @IBOutlet weak var lv2label: UILabel!
-    @IBOutlet weak var lv3label: UILabel!
+ 
     @IBOutlet weak var totalTokens: UILabel!
     var sd = ScoreDelegate()
     
