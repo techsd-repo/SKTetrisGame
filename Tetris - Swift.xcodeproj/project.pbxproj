@@ -11,6 +11,8 @@
 		FA721B731B150C17008C921C /* BlastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA721B721B150C17008C921C /* BlastDelegate.swift */; };
 		FA7AC0411B07A5CE00478235 /* RowBlastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AC0401B07A5CE00478235 /* RowBlastVC.swift */; };
 		FAB3067A1B1A78F100B24FB6 /* GameOverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB306791B1A78F100B24FB6 /* GameOverVC.swift */; };
+		FAB3067E1B1B777400B24FB6 /* Icons_Tetris in Resources */ = {isa = PBXBuildFile; fileRef = FAB3067D1B1B777400B24FB6 /* Icons_Tetris */; };
+		FAB306821B1B7BF700B24FB6 /* pauseoutline36.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB306811B1B7BF700B24FB6 /* pauseoutline36.png */; };
 		FAB987A71AD865AE00D4484F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB987A61AD865AE00D4484F /* AppDelegate.swift */; };
 		FAB987AB1AD865AE00D4484F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB987AA1AD865AE00D4484F /* GameScene.swift */; };
 		FAB987AD1AD865AE00D4484F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB987AC1AD865AE00D4484F /* GameViewController.swift */; };
@@ -61,6 +63,8 @@
 		FA721B721B150C17008C921C /* BlastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlastDelegate.swift; sourceTree = "<group>"; };
 		FA7AC0401B07A5CE00478235 /* RowBlastVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowBlastVC.swift; sourceTree = "<group>"; };
 		FAB306791B1A78F100B24FB6 /* GameOverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverVC.swift; sourceTree = "<group>"; };
+		FAB3067D1B1B777400B24FB6 /* Icons_Tetris */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icons_Tetris; sourceTree = "<group>"; };
+		FAB306811B1B7BF700B24FB6 /* pauseoutline36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pauseoutline36.png; path = "Icons_Tetris/36dp/ic_pause_circle_outline_white_36dp/android/drawable-hdpi/pauseoutline36.png"; sourceTree = "<group>"; };
 		FAB987A11AD865AE00D4484F /* Tetris - Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tetris - Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB987A51AD865AE00D4484F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB987A61AD865AE00D4484F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 		FAB987A41AD865AE00D4484F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FAB306811B1B7BF700B24FB6 /* pauseoutline36.png */,
+				FAB3067D1B1B777400B24FB6 /* Icons_Tetris */,
 				FADE01151AD9F1B5007C0079 /* tetrismain.png */,
 				FAB987D71AD8AD2B00D4484F /* whitebg.png */,
 				FAB987D81AD8AD2B00D4484F /* whitebg@2x.png */,
@@ -295,6 +301,7 @@
 			files = (
 				FAB987B51AD865AE00D4484F /* LaunchScreen.xib in Resources */,
 				FADE01161AD9F1B5007C0079 /* tetrismain.png in Resources */,
+				FAB3067E1B1B777400B24FB6 /* Icons_Tetris in Resources */,
 				FAB987DF1AD8AD2B00D4484F /* background.png in Resources */,
 				FAB987D11AD8ACDB00D4484F /* drop.mp3 in Resources */,
 				FAB987E21AD8AD2B00D4484F /* gameboard@2x.png in Resources */,
@@ -302,6 +309,7 @@
 				FAB987E11AD8AD2B00D4484F /* gameboard.png in Resources */,
 				FAB987D21AD8ACDB00D4484F /* gameover.mp3 in Resources */,
 				FAB987B21AD865AE00D4484F /* Images.xcassets in Resources */,
+				FAB306821B1B7BF700B24FB6 /* pauseoutline36.png in Resources */,
 				FAB987E01AD8AD2B00D4484F /* background@2x.png in Resources */,
 				FAB987D31AD8ACDB00D4484F /* levelup.mp3 in Resources */,
 				FAB987D61AD8ACF700D4484F /* Sprites.atlas in Resources */,

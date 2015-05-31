@@ -281,6 +281,12 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxe-x2-lp2">
+                                <rect key="frame" x="316" y="415" width="30" height="30"/>
+                                <state key="normal" image="pauseoutline36.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -433,6 +439,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pauseoutline36.png" width="54" height="54"/>
         <image name="tetrismain.png" width="600" height="300"/>
         <image name="whitebg.png" width="84" height="100"/>
     </resources>

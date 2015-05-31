@@ -75,6 +75,8 @@ class Tetris {
         return (fallingShape, nextShape)
     }
     
+ 
+    
     
     func detectIllegalPlacement() -> Bool {
         if let shape = fallingShape {
@@ -88,6 +90,8 @@ class Tetris {
             }
         }
         return false
+        
+        
     }
     
     func settleShape() {
