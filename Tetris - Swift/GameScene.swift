@@ -23,6 +23,7 @@ class GameScene: SKScene {
     var tickLengthMillis = TickLengthLevelOne
     var lastTick:NSDate?
     
+    var avPlayer:AVAudioPlayer!
     
     var textureCache = Dictionary<String, SKTexture>()
     
@@ -60,9 +61,9 @@ class GameScene: SKScene {
         gameLayer.addChild(shapeLayer)
         
         
-     
+      playTheme()
         
-       
+      
        
     }
     
@@ -70,15 +71,28 @@ class GameScene: SKScene {
     
  
     func playSound(sound: String) {
+        runAction(SKAction.playSoundFileNamed(sound, waitForCompletion: false))
+    }
+
+    func playTheme() {
         let fileURL: NSURL = NSBundle.mainBundle().URLForResource("theme", withExtension: "mp3")!
         
         var error: NSError?
-        let avPlayer = AVAudioPlayer(contentsOfURL: fileURL, fileTypeHint: AVFileTypeMPEGLayer3, error: &error)
+        avPlayer = AVAudioPlayer(contentsOfURL: fileURL, fileTypeHint: AVFileTypeMPEGLayer3, error: &error)
+       
+        if let err = error {
+            println("AV error: \(err.localizedDescription)")
+        } else {
         avPlayer?.numberOfLoops = 300000
-
+        avPlayer.volume = 1.0
         avPlayer.play()
+        }
     }
-
+    
+    func pauseTheme() {
+        avPlayer.pause()
+    }
+    
     func startTicking() {
         lastTick = NSDate()
     }
