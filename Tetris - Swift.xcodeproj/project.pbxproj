@@ -58,6 +58,7 @@
 		FAF7A4FB1B2E03EF0057B997 /* teal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4EF1B2E03EF0057B997 /* teal@2x.png */; };
 		FAF7A4FC1B2E03EF0057B997 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4F01B2E03EF0057B997 /* yellow.png */; };
 		FAF7A4FD1B2E03EF0057B997 /* yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4F11B2E03EF0057B997 /* yellow@2x.png */; };
+		FAF7A4FF1B2E13F00057B997 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF7A4FE1B2E13F00057B997 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 		FAF7A4EF1B2E03EF0057B997 /* teal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "teal@2x.png"; path = "Sprites.atlas/teal@2x.png"; sourceTree = "<group>"; };
 		FAF7A4F01B2E03EF0057B997 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow.png; path = Sprites.atlas/yellow.png; sourceTree = "<group>"; };
 		FAF7A4F11B2E03EF0057B997 /* yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "yellow@2x.png"; path = "Sprites.atlas/yellow@2x.png"; sourceTree = "<group>"; };
+		FAF7A4FE1B2E13F00057B997 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF7A4FF1B2E13F00057B997 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +152,7 @@
 		FAB987981AD865AE00D4484F = {
 			isa = PBXGroup;
 			children = (
+				FAF7A4FE1B2E13F00057B997 /* AVFoundation.framework */,
 				FAB987A31AD865AE00D4484F /* Tetris - Swift */,
 				FAB987BD1AD865AE00D4484F /* Tetris - SwiftTests */,
 				FAB987A21AD865AE00D4484F /* Products */,

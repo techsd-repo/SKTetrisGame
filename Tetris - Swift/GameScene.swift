@@ -7,6 +7,7 @@
 //
 
 import SpriteKit
+import AVFoundation
 
 let BlockSize:CGFloat = 20.0
 
@@ -23,7 +24,6 @@ class GameScene: SKScene {
     var lastTick:NSDate?
     
     
-    
     var textureCache = Dictionary<String, SKTexture>()
     
     required init(coder aDecoder: NSCoder) {
@@ -37,7 +37,7 @@ class GameScene: SKScene {
         
         super.init(size: size)
         
-       
+        
         
         anchorPoint = CGPoint(x: 0, y: 1.0)
         
@@ -59,16 +59,24 @@ class GameScene: SKScene {
         shapeLayer.addChild(gameBoard)
         gameLayer.addChild(shapeLayer)
         
-        runAction(SKAction.repeatActionForever(SKAction.playSoundFileNamed("theme.mp3", waitForCompletion: true)))
         
+     
+        
+       
        
     }
     
-    
+  
     
  
     func playSound(sound: String) {
-        runAction(SKAction.playSoundFileNamed(sound, waitForCompletion: false))
+        let fileURL: NSURL = NSBundle.mainBundle().URLForResource("theme", withExtension: "mp3")!
+        
+        var error: NSError?
+        let avPlayer = AVAudioPlayer(contentsOfURL: fileURL, fileTypeHint: AVFileTypeMPEGLayer3, error: &error)
+        avPlayer?.numberOfLoops = 300000
+
+        avPlayer.play()
     }
 
     func startTicking() {
