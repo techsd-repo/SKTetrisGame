@@ -49,28 +49,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-4R-rhb">
-                                <rect key="frame" x="0.0" y="623" width="414" height="44"/>
-                                <items>
-                                    <barButtonItem title="Trade in Points" id="z44-Kl-j4v">
-                                        <connections>
-                                            <segue destination="epS-GM-ltO" kind="show" id="Xky-2q-cag"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" id="08A-YN-Qdc">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xrS-Vx-2Qw">
-                                            <rect key="frame" x="132" y="7" width="30" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Quit">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                        </button>
-                                        <connections>
-                                            <segue destination="VwO-Hb-Lm3" kind="show" id="8nN-Kz-xgA"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tokens Left:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EI8-9z-SL2">
                                 <rect key="frame" x="189" y="334" width="144" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -107,6 +85,30 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-4R-rhb">
+                                <rect key="frame" x="0.0" y="623" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem title="Trade in Points" id="z44-Kl-j4v">
+                                        <connections>
+                                            <segue destination="epS-GM-ltO" kind="show" id="Xky-2q-cag"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="08A-YN-Qdc">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xrS-Vx-2Qw">
+                                            <rect key="frame" x="132" y="7" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Quit">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <connections>
+                                            <segue destination="VwO-Hb-Lm3" kind="popoverPresentation" popoverAnchorBarButtonItem="08A-YN-Qdc" id="wmy-jH-e2J">
+                                                <popoverArrowDirection key="popoverArrowDirection" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -247,12 +249,9 @@
                                 <state key="normal" title="Quit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="VwO-Hb-Lm3" kind="show" id="vz1-gD-H30"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUj-42-6nX">
-                                <rect key="frame" x="10" y="547" width="138" height="100"/>
+                                <rect key="frame" x="-8" y="539" width="128" height="79"/>
                                 <state key="normal" image="whitebg.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -261,14 +260,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJg-G8-jSl">
-                                <rect key="frame" x="48" y="593" width="63" height="31"/>
+                                <rect key="frame" x="24" y="573" width="63" height="31"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.90000000000000002" height="1"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="33"/>
                                 <color key="textColor" red="0.1333333333" green="0.64705882349999999" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l21-CB-Cwl">
-                                <rect key="frame" x="28" y="547" width="93" height="38"/>
+                                <rect key="frame" x="9" y="539" width="87" height="33"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.90000000000000002" height="1"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Row Blasts">
@@ -282,7 +281,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxe-x2-lp2">
-                                <rect key="frame" x="316" y="415" width="30" height="30"/>
+                                <rect key="frame" x="329" y="14" width="30" height="30"/>
                                 <state key="normal" image="pauseoutline36.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -386,41 +385,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeI-Gy-E14">
-                                <rect key="frame" x="67" y="67" width="62" height="30"/>
-                                <state key="normal" title="Freestyle">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGd-MM-0ce">
-                                <rect key="frame" x="157" y="202" width="57" height="30"/>
-                                <state key="normal" title="Settings">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tetrismain.png" translatesAutoresizingMaskIntoConstraints="NO" id="UPg-YD-omB" customClass="Start">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="7or-oC-PGI">
+                                <rect key="frame" x="0.0" y="-10" width="389" height="677"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aw4-sl-7hd">
-                                <rect key="frame" x="286" y="368" width="37" height="30"/>
-                                <state key="normal" title="Shop">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeI-Gy-E14">
+                                <rect key="frame" x="38" y="112" width="98" height="22"/>
+                                <state key="normal" title=" Freestyle" image="teal.png">
+                                    <color key="titleColor" red="0.0" green="0.67105263157894723" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="spS-no-qMo" kind="show" id="fiR-N0-TGW"/>
+                                    <segue destination="LVB-YS-i5n" kind="popoverPresentation" popoverAnchorView="yeI-Gy-E14" id="uiJ-8s-FDf">
+                                        <popoverArrowDirection key="popoverArrowDirection" left="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EF6-Zp-Rls">
-                                <rect key="frame" x="83" y="202" width="41" height="30"/>
-                                <state key="normal" title="Game">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGd-MM-0ce">
+                                <rect key="frame" x="107" y="203" width="92" height="22"/>
+                                <state key="normal" title=" Settings" image="orange.png">
+                                    <color key="titleColor" red="0.90131578947368418" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aw4-sl-7hd">
+                                <rect key="frame" x="207" y="112" width="68" height="22"/>
+                                <state key="normal" title=" Shop" image="blue.png">
+                                    <color key="titleColor" red="0.1333333333" green="0.64313725489999995" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LVB-YS-i5n" kind="show" id="zJR-s7-4P8"/>
+                                    <segue destination="spS-no-qMo" kind="popoverPresentation" popoverAnchorView="Aw4-sl-7hd" id="fiR-N0-TGW">
+                                        <popoverArrowDirection key="popoverArrowDirection" left="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TB9-au-JGd">
-                                <rect key="frame" x="83" y="28" width="140" height="23"/>
+                                <rect key="frame" x="67" y="28" width="240" height="23"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -439,12 +439,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background.png" width="320" height="568"/>
+        <image name="blue.png" width="20" height="20"/>
+        <image name="orange.png" width="20" height="20"/>
         <image name="pauseoutline36.png" width="54" height="54"/>
+        <image name="teal.png" width="20" height="20"/>
         <image name="tetrismain.png" width="600" height="300"/>
         <image name="whitebg.png" width="84" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8nN-Kz-xgA"/>
         <segue reference="fiR-N0-TGW"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -46,6 +46,18 @@
 		FACB83D81B081C6E00EDD817 /* ScoreDelegateClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB83D71B081C6E00EDD817 /* ScoreDelegateClass.swift */; };
 		FACB83DA1B08EB0B00EDD817 /* TradePointsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB83D91B08EB0B00EDD817 /* TradePointsVC.swift */; };
 		FADE01161AD9F1B5007C0079 /* tetrismain.png in Resources */ = {isa = PBXBuildFile; fileRef = FADE01151AD9F1B5007C0079 /* tetrismain.png */; };
+		FAF7A4F21B2E03EF0057B997 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4E61B2E03EF0057B997 /* blue.png */; };
+		FAF7A4F31B2E03EF0057B997 /* blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4E71B2E03EF0057B997 /* blue@2x.png */; };
+		FAF7A4F41B2E03EF0057B997 /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4E81B2E03EF0057B997 /* orange.png */; };
+		FAF7A4F51B2E03EF0057B997 /* orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4E91B2E03EF0057B997 /* orange@2x.png */; };
+		FAF7A4F61B2E03EF0057B997 /* purple.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4EA1B2E03EF0057B997 /* purple.png */; };
+		FAF7A4F71B2E03EF0057B997 /* purple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4EB1B2E03EF0057B997 /* purple@2x.png */; };
+		FAF7A4F81B2E03EF0057B997 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4EC1B2E03EF0057B997 /* red.png */; };
+		FAF7A4F91B2E03EF0057B997 /* red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4ED1B2E03EF0057B997 /* red@2x.png */; };
+		FAF7A4FA1B2E03EF0057B997 /* teal.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4EE1B2E03EF0057B997 /* teal.png */; };
+		FAF7A4FB1B2E03EF0057B997 /* teal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4EF1B2E03EF0057B997 /* teal@2x.png */; };
+		FAF7A4FC1B2E03EF0057B997 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4F01B2E03EF0057B997 /* yellow.png */; };
+		FAF7A4FD1B2E03EF0057B997 /* yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF7A4F11B2E03EF0057B997 /* yellow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +114,18 @@
 		FACB83D71B081C6E00EDD817 /* ScoreDelegateClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScoreDelegateClass.swift; path = ../ScoreDelegateClass.swift; sourceTree = "<group>"; };
 		FACB83D91B08EB0B00EDD817 /* TradePointsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradePointsVC.swift; sourceTree = "<group>"; };
 		FADE01151AD9F1B5007C0079 /* tetrismain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tetrismain.png; sourceTree = "<group>"; };
+		FAF7A4E61B2E03EF0057B997 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = Sprites.atlas/blue.png; sourceTree = "<group>"; };
+		FAF7A4E71B2E03EF0057B997 /* blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blue@2x.png"; path = "Sprites.atlas/blue@2x.png"; sourceTree = "<group>"; };
+		FAF7A4E81B2E03EF0057B997 /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orange.png; path = Sprites.atlas/orange.png; sourceTree = "<group>"; };
+		FAF7A4E91B2E03EF0057B997 /* orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "orange@2x.png"; path = "Sprites.atlas/orange@2x.png"; sourceTree = "<group>"; };
+		FAF7A4EA1B2E03EF0057B997 /* purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = purple.png; path = Sprites.atlas/purple.png; sourceTree = "<group>"; };
+		FAF7A4EB1B2E03EF0057B997 /* purple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "purple@2x.png"; path = "Sprites.atlas/purple@2x.png"; sourceTree = "<group>"; };
+		FAF7A4EC1B2E03EF0057B997 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red.png; path = Sprites.atlas/red.png; sourceTree = "<group>"; };
+		FAF7A4ED1B2E03EF0057B997 /* red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red@2x.png"; path = "Sprites.atlas/red@2x.png"; sourceTree = "<group>"; };
+		FAF7A4EE1B2E03EF0057B997 /* teal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teal.png; path = Sprites.atlas/teal.png; sourceTree = "<group>"; };
+		FAF7A4EF1B2E03EF0057B997 /* teal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "teal@2x.png"; path = "Sprites.atlas/teal@2x.png"; sourceTree = "<group>"; };
+		FAF7A4F01B2E03EF0057B997 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow.png; path = Sprites.atlas/yellow.png; sourceTree = "<group>"; };
+		FAF7A4F11B2E03EF0057B997 /* yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "yellow@2x.png"; path = "Sprites.atlas/yellow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +200,18 @@
 		FAB987A41AD865AE00D4484F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FAF7A4E61B2E03EF0057B997 /* blue.png */,
+				FAF7A4E71B2E03EF0057B997 /* blue@2x.png */,
+				FAF7A4E81B2E03EF0057B997 /* orange.png */,
+				FAF7A4E91B2E03EF0057B997 /* orange@2x.png */,
+				FAF7A4EA1B2E03EF0057B997 /* purple.png */,
+				FAF7A4EB1B2E03EF0057B997 /* purple@2x.png */,
+				FAF7A4EC1B2E03EF0057B997 /* red.png */,
+				FAF7A4ED1B2E03EF0057B997 /* red@2x.png */,
+				FAF7A4EE1B2E03EF0057B997 /* teal.png */,
+				FAF7A4EF1B2E03EF0057B997 /* teal@2x.png */,
+				FAF7A4F01B2E03EF0057B997 /* yellow.png */,
+				FAF7A4F11B2E03EF0057B997 /* yellow@2x.png */,
 				FAB306811B1B7BF700B24FB6 /* pauseoutline36.png */,
 				FAB3067D1B1B777400B24FB6 /* Icons_Tetris */,
 				FADE01151AD9F1B5007C0079 /* tetrismain.png */,
@@ -302,22 +338,34 @@
 			files = (
 				FAB987B51AD865AE00D4484F /* LaunchScreen.xib in Resources */,
 				FADE01161AD9F1B5007C0079 /* tetrismain.png in Resources */,
+				FAF7A4FB1B2E03EF0057B997 /* teal@2x.png in Resources */,
+				FAF7A4FA1B2E03EF0057B997 /* teal.png in Resources */,
 				FAB3067E1B1B777400B24FB6 /* Icons_Tetris in Resources */,
 				FAB987DF1AD8AD2B00D4484F /* background.png in Resources */,
 				FAB987D11AD8ACDB00D4484F /* drop.mp3 in Resources */,
 				FAB987E21AD8AD2B00D4484F /* gameboard@2x.png in Resources */,
 				FAB987D41AD8ACDB00D4484F /* theme.mp3 in Resources */,
+				FAF7A4F61B2E03EF0057B997 /* purple.png in Resources */,
 				FAB987E11AD8AD2B00D4484F /* gameboard.png in Resources */,
+				FAF7A4F31B2E03EF0057B997 /* blue@2x.png in Resources */,
 				FAB987D21AD8ACDB00D4484F /* gameover.mp3 in Resources */,
 				FAB987B21AD865AE00D4484F /* Images.xcassets in Resources */,
+				FAF7A4F91B2E03EF0057B997 /* red@2x.png in Resources */,
 				FAB306821B1B7BF700B24FB6 /* pauseoutline36.png in Resources */,
+				FAF7A4F51B2E03EF0057B997 /* orange@2x.png in Resources */,
 				FAB987E01AD8AD2B00D4484F /* background@2x.png in Resources */,
+				FAF7A4F21B2E03EF0057B997 /* blue.png in Resources */,
+				FAF7A4FC1B2E03EF0057B997 /* yellow.png in Resources */,
+				FAF7A4FD1B2E03EF0057B997 /* yellow@2x.png in Resources */,
 				FAB987D31AD8ACDB00D4484F /* levelup.mp3 in Resources */,
 				FAB987D61AD8ACF700D4484F /* Sprites.atlas in Resources */,
+				FAF7A4F71B2E03EF0057B997 /* purple@2x.png in Resources */,
 				FAB987D01AD8ACDB00D4484F /* bomb.mp3 in Resources */,
 				FAB987DD1AD8AD2B00D4484F /* whitebg.png in Resources */,
 				FAB987DE1AD8AD2B00D4484F /* whitebg@2x.png in Resources */,
 				FAB987B01AD865AE00D4484F /* Main.storyboard in Resources */,
+				FAF7A4F81B2E03EF0057B997 /* red.png in Resources */,
+				FAF7A4F41B2E03EF0057B997 /* orange.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Tetris - Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -488,6 +537,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Tetris - Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

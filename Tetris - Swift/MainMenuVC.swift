@@ -14,7 +14,7 @@ class mmvc:UIViewController {
      var sd = ScoreDelegate()
     override func viewDidLoad() {
         super.viewDidLoad()
-        hscore.text = String(sd.readHighScore())
+        hscore.text = "High Score:" + String(sd.readHighScore())
     }
     
    

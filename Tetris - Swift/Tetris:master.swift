@@ -101,6 +101,7 @@ class Tetris {
             }
             fallingShape = nil
             delegate?.gameShapeDidLand(self)
+            println("skn landed")
         }
     }
     
