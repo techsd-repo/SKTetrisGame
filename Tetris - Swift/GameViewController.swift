@@ -199,7 +199,7 @@ class GameViewController: UIViewController, tetrisDelegate, UIGestureRecognizerD
         
         let removedLines = tetris.removeCompletedLines()
         if removedLines.linesRemoved.count > 0 {
-            
+            levelLabel.text = "\(tetris.level)"
             scoreLabel.text = "\(tetris.score)"
             var sd = ScoreDelegate()
             sd.setCurrScore(tetris.score)
